@@ -27,11 +27,17 @@ To use the library you need to do the following:
 5) Connect up an IR LED to your NodeMCU as described above
 
 Finding IR Codes
+
 To use this library you need to know the correct IR code to transmit, the length of the code and the protocol to use.  To find this information I used an IR receiver connected to an Arduino Uno.  There are lots of tutorials online for how to do this, for example:
 https://learn.adafruit.com/using-an-infrared-library/hardware-needed
+
+I have included a sample Sketch IRrecvCheckSTA that works on a NodeMCU with a connected IR receiver.  It provides the IR code, number of bits, and the protocol info required to retransmit the code with ST Anything.
+I am sure there are other codes that can be supported, I will continue to work on this, but please let me know if you find something unsupported.
+
 My example sketch includes the codes I found for my LG and Samsung TV power buttons.
 
 Next Steps
+
 As the next steps for this library I have planned the following:
 1) Create a momentary push button that does not toggle on and off, this could be used for cases such as adjusting a TV channel or the volume.
 2) Create an IR macro button that can send a series of IR codes, perhaps to turn on the TV, change to a certain input and adjust the volume all with one click.
