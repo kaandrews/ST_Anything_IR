@@ -14,7 +14,9 @@ The first release of the code represents an IR controlled device as an On/Off bu
 To use the library you need to do the following:
 1) Get up and running with the ST Anything system https://github.com/DanielOgorchock/ST_Anything
 2) Download the library IRremoteESP8266 through the Arduino IDE Manage Libraries interface.
-3) Add the EX_SwitchIR.h and EX_SwitchIR.cpp files to the your Arduino/libraries/ST_Anything folder
+3) Add the following files to your Arduino/libraries/ST_Anything folder:
+
+      EX_SwitchIR.h, EX_SwitchIR.cpp, S_TimedRelayIR.h, S_TimedRelayIR.cpp
 4) Load up the example sketch and modify the required parameters:
     - Set the SSID of your WiFi network
     - Set the password for your WiFi network
