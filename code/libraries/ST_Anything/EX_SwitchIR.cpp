@@ -201,6 +201,7 @@ namespace st
   {
     m_nPin=pin;
     pinMode(m_nPin, OUTPUT);
-    writeStateToPin();
+    digitalWrite(m_nPin, LOW);
+    //writeStateToPin();
   }
 }
